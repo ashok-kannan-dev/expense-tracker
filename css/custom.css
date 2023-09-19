@@ -1,0 +1,102 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgba(204, 204, 204, 0.18);
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.budget-calculater {
+  width: 700px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 40px;
+}
+.budget-calculater .error {
+  color: #f00;
+}
+.budget-calculater .customBtn {
+  background-color: #f0483e;
+  border-radius: 2px;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+}
+.budget-calculater .customInput {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5019607843);
+  text-indent: 10px;
+}
+.budget-calculater .customInput + .customInput {
+  margin-top: 10px;
+}
+.budget-calculater .given-area {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.budget-calculater .given-area .total-budget,
+.budget-calculater .given-area .expenses {
+  width: 100%;
+  max-width: 47%;
+}
+.budget-calculater .calculate-expenses {
+  margin: 30px 0;
+  padding: 15px 20px;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+}
+.budget-calculater .calculate-expenses ul li {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.budget-calculater .calculate-expenses ul li span {
+  font-size: 18px;
+  width: 100%;
+  max-width: 150px;
+  text-align: center;
+  display: inline-block;
+}
+.budget-calculater .calculate-expenses ul li:first-child span {
+  font-weight: 700;
+}
+.budget-calculater .expenses-list ul {
+  margin: 30px 0;
+}
+.budget-calculater .expenses-list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-left: 5px solid #90ee8f;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 5px 20px;
+}
+.budget-calculater .expenses-list li span {
+  width: 100%;
+  max-width: 135px;
+}
+.budget-calculater .expenses-list li .edit,
+.budget-calculater .expenses-list li .delete {
+  cursor: pointer;
+}

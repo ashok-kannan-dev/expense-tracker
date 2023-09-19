@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="budget-calculater">
+        <div class="buget-parent">
+            <div class="given-area">
+                <div class="total-budget">
+                    <h3>Total Budget</h3>
+                    <input type="number" class="customInput" id="totalBudget">
+                    <button class="customBtn" id="budgetBtn">Set Budget</button>
+                </div>
+
+                <div class="expenses">
+                    <h3>Total Expenses</h3>
+                    <input type="text" class="customInput" id="expenseItem">
+                    <input type="number" class="customInput" id="expenseAmount">
+                    <button class="customBtn" id="expensesBtn">Check Amount</button>
+                </div>
+            </div>
+
+            <div class="calculate-expenses">
+                <ul>
+                    <li>
+                        <span class="total-budget">Total Budget</span>
+                        <span class="total-expenses">Total Expenses</span>
+                        <span class="balance-amount">Balance</span>
+                    </li>
+                    <li>
+                        <span class="get-budget">0</span>
+                        <span class="get-expenses">0</span>
+                        <span class="get-balance"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="expenses-list">
+                <h3>Expenses List</h3>
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/custom.js"></script>
+
+</html>

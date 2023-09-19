@@ -1,0 +1,112 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(204 204 204 / 18%);
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.budget-calculater {
+  width: 700px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 40px;
+  .error {
+    color: #f00;
+  }
+  .customBtn {
+    background-color: #f0483e;
+    border-radius: 2px;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+  }
+  .customInput {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #00000080;
+    text-indent: 10px;
+  }
+  .customInput + .customInput {
+    margin-top: 10px;
+  }
+  .given-area {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .total-budget,
+    .expenses {
+      width: 100%;
+      max-width: 47%;
+    }
+  }
+  .calculate-expenses {
+    margin: 30px 0;
+    padding: 15px 20px;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    ul {
+      li {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        span {
+          font-size: 18px;
+          width: 100%;
+          max-width: 150px;
+          text-align: center;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .calculate-expenses {
+    ul {
+      li:first-child {
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .expenses-list {
+    ul {
+      margin: 30px 0;
+    }
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      border-left: 5px solid #90ee8f;
+      border-radius: 4px;
+      margin-bottom: 30px;
+      padding: 5px 20px;
+      span {
+        width: 100%;
+        max-width: 135px;
+      }
+      .edit,
+      .delete {
+        cursor: pointer;
+      }
+    }
+  }
+}
